@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="28" fill="#3B82F6"/>
+  <!-- Briefcase/portal icon -->
+  <rect x="18" y="26" width="28" height="18" rx="2" stroke="white" stroke-width="3" fill="none"/>
+  <path d="M25 26V22C25 20 27 18 32 18C37 18 39 20 39 22V26" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="18" y1="32" x2="46" y2="32" stroke="white" stroke-width="3"/>
+  <circle cx="32" cy="32" r="3" fill="white"/>
+</svg>

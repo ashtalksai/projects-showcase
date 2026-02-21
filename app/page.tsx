@@ -37,18 +37,11 @@ const projects = [
     logo: "/logos/onholdbot.svg",
   },
   {
-    name: "Knowledge Base",
-    tagline: "Second brain system",
-    url: "https://knowledge.ashketing.com",
-    gradient: "from-[#8B5CF6] to-[#EC4899]",
-    logo: "/logos/knowledge.svg",
-  },
-  {
-    name: "Cobalt",
-    tagline: "Self-hosted media downloader",
-    url: "https://cobalt.ashketing.com",
-    gradient: "from-[#0EA5E9] to-[#06B6D4]",
-    logo: "/logos/cobalt.svg",
+    name: "ClientShell",
+    tagline: "White-label client portal for small firms",
+    url: "https://clientshell.ashketing.com",
+    gradient: "from-[#3B82F6] to-[#1D4ED8]",
+    logo: "/logos/clientshell.svg",
   },
 ];
 
