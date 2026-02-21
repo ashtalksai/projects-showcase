@@ -1,15 +1,54 @@
+import Image from "next/image";
+
 const projects = [
   {
     name: "CareerJump",
-    tagline: "Mentor matching for mid-career professionals",
+    tagline: "Mentor matching for 40+ career changers",
     url: "https://careerjump.ashketing.com",
-    gradient: "from-[#C4704F] to-[#9CAF88]", // Terracotta to sage
+    gradient: "from-[#D4735E] to-[#8B9D83]",
+    logo: "/logos/careerjump.svg",
   },
   {
     name: "Launch Path",
     tagline: "Credit roadmap for immigrants & students",
     url: "https://launchpath.ashketing.com",
-    gradient: "from-[#228B22] to-[#4A5568]", // Forest green to gray
+    gradient: "from-[#2D5016] to-[#6B7280]",
+    logo: "/logos/launchpath.svg",
+  },
+  {
+    name: "ReviewPulse",
+    tagline: "AI review monitoring for SMBs",
+    url: "https://reviewpulse.ashketing.com",
+    gradient: "from-[#6366F1] to-[#8B5CF6]",
+    logo: "/logos/reviewpulse.svg",
+  },
+  {
+    name: "TikTok Trend Catcher",
+    tagline: "Viral sound alerts for creators",
+    url: "https://trendcatch.ashketing.com",
+    gradient: "from-[#EE1D52] to-[#69C9D0]",
+    logo: "/logos/trendcatcher.svg",
+  },
+  {
+    name: "OnHold Bot",
+    tagline: "AI that sits on hold for you",
+    url: "https://onholdbot.ashketing.com",
+    gradient: "from-[#F59E0B] to-[#EF4444]",
+    logo: "/logos/onholdbot.svg",
+  },
+  {
+    name: "Knowledge Base",
+    tagline: "Second brain system",
+    url: "https://knowledge.ashketing.com",
+    gradient: "from-[#8B5CF6] to-[#EC4899]",
+    logo: "/logos/knowledge.svg",
+  },
+  {
+    name: "Cobalt",
+    tagline: "Self-hosted media downloader",
+    url: "https://cobalt.ashketing.com",
+    gradient: "from-[#0EA5E9] to-[#06B6D4]",
+    logo: "/logos/cobalt.svg",
   },
 ];
 
@@ -25,8 +64,8 @@ export default function Home() {
       </header>
 
       {/* Projects Grid */}
-      <section className="max-w-4xl mx-auto px-6 pb-20">
-        <div className="grid md:grid-cols-2 gap-6">
+      <section className="max-w-5xl mx-auto px-6 pb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <a
               key={project.name}
@@ -36,13 +75,17 @@ export default function Home() {
               className="group block"
             >
               <article className="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-all duration-300 hover:transform hover:-translate-y-1">
-                {/* Preview gradient */}
+                {/* Preview gradient with logo */}
                 <div
                   className={`h-40 bg-gradient-to-br ${project.gradient} flex items-center justify-center`}
                 >
-                  <span className="text-5xl font-bold text-white/30">
-                    {project.name.charAt(0)}
-                  </span>
+                  <Image
+                    src={project.logo}
+                    alt={`${project.name} logo`}
+                    width={80}
+                    height={80}
+                    className="drop-shadow-lg"
+                  />
                 </div>
 
                 {/* Content */}
